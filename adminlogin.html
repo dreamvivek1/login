@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <form action="action_page.php" method="post">
+        <div class="imgcontainer">
+          <img src="user.jpg" alt="admin" class="login">
+        </div>
+
+        <div class="container">
+          <br/>
+          <label for="related-to"><b>Your Department</b></label>
+          <select class="form-control" id="dept_id" name="dept_id" required>
+            <option value="" disabled selected hidden>Choose your dept</option>
+            <option value="1">Academic</option>
+            <option value="2">Sport</option>
+            <option value="3">Cafeteria</option>
+          </select>
+      <br/>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required style='display:block; width:auto'>
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>
